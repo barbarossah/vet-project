@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./assets/styles/output.css" rel="stylesheet" />
   </head>
-  <body
-    class="font-futura text-prim bg-grey bg-[url(/assets/images/bg.png)] bg-cover bg-no-repeat bg-center"
-  >
+  <body class="font-futura text-prim bg-grey">
     <!-- CONTACTS START -->
     <ul
       class="container flex items-center justify-end gap-[98px] font-medium py-[13px] text-sm *:flex *:items-center *:gap-[9px] *:last:gap-0"
@@ -66,7 +64,9 @@
     </header>
     <!-- HEADER END -->
 
-    <main class="">
+    <main
+      class="bg-[url(/assets/images/bg.png)] bg-cover bg-no-repeat bg-center pb-[247px]"
+    >
       <!-- SHOWCASE START -->
       <section
         class="h-screen pt-[153px] pb-[237px] justify-end relative overflow-clip"
@@ -194,7 +194,7 @@
             <div
               class="p-[42px_35px_43px] bg-white w-[1223px] mx-auto flex gap-20"
             >
-              <img src="./assets/images/image 4.jpeg" alt="" />
+              <img src="./assets/images/image-4.jpeg" alt="" />
               <div class="flex flex-col justify-center">
                 <h3 class="text-4xl mb-[18px] font-semibold">
                   Первичный осмотр
@@ -288,7 +288,7 @@
               </div>
             </figure>
             <figure class="flex w-[640px] bg-white">
-              <img src="./assets/images/Rectangle 25.jpeg" alt="" />
+              <img src="./assets/images/Rectangle-25.jpeg" alt="" />
               <div class="p-[41px_35px_0_31px] w-[335px]">
                 <ul class="inline-flex gap-[7px] mb-[31px] *:text-blue">
                   <li><a href="#">#собака</a></li>
@@ -319,7 +319,7 @@
               </div>
             </figure>
             <figure class="w-[305px] bg-white">
-              <img src="./assets/images/Rectangle 27.jpeg" alt="cat-icon" />
+              <img src="./assets/images/Rectangle-28.jpeg" alt="cat-icon" />
               <div class="p-[21px_22px_32px_30px]">
                 <time class="text-end text-minor block" datetime="2020-07-21"
                   >21.07.2020</time
@@ -381,7 +381,6 @@
               cols="72"
               maxlength="150"
               name="question"
-              id=""
               placeholder="Опишите Ваш вопрос. 
 Например: в каком возрасте можно прививать от бешенства?"
             ></textarea>
@@ -396,22 +395,27 @@
       </section>
       <!-- FEEDBACK END -->
     </main>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <!-- FOOTER START -->
+    <footer
+      class="border-t-[1px] border-solid border-[#ebebeb] bg-footer p-[23px_65px]"
+    >
+      <div class="container flex">
+        <img class="w-[158px] h-[57px]" src="./assets/icons/logo.svg" alt="" />
+        <nav>
+          <ul
+            class="flex flex-col flex-wrap w-[288px] h-[91px] mx-[67px_127px] *:font-medium"
+          >
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О Клинике</a></li>
+            <li><a href="#">Наши Услуги</a></li>
+            <li><a href="#">Полезные Статьи</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
     <br />
   </body>
 </html>
