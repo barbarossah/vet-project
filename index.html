@@ -4,7 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./assets/styles/output.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body class="font-futura text-prim bg-grey">
+    <!-- CONTACTS START -->
+    <ul
+      class="container flex items-center justify-end gap-[98px] font-medium py-[13px] text-sm *:flex *:items-center *:gap-[9px] *:last:gap-0"
+    >
+      <li>
+        <img src="./assets/icons/address.svg" alt="home-icon" />
+        <address class="not-italic">г. Мариуполь, проспект Победы, 48а</address>
+      </li>
+      <li>
+        <img src="./assets/icons/phone.svg" alt="phone-icon" /><a
+          href="tel:+0676347574"
+          >(067) 634 -75 - 74</a
+        ><img src="./assets/icons/dot.svg" alt="dot-icon" /><a
+          href="tel:+0637570131"
+          >(0637) 57 - 01 - 31</a
+        >
+        <img src="./assets/icons/dot.svg" alt="dot-icon" /><a
+          href="tel:+0637570131"
+          >(0637) 57 - 01 - 31</a
+        >
+      </li>
+      <li>
+        <img src="./assets/icons//schedule.svg" alt="schedule" /><span
+          class="m-[0px_17px_0px_7px]"
+          ><b>Пн - Пт</b> 8:00 - 18:00</span
+        >
+        <span><b>Сб - Вс</b> 8:00 - 14:00</span>
+      </li>
+    </ul>
+    <!-- CONTACTS END -->
+    <!-- HEADER START -->
+    <header class="h-[61px] bg-white">
+      <div class="container flex items-center justify-between h-full">
+        <a class="" href="#"><img src="./assets/icons/logo.svg" alt="" /></a>
+        <nav class="flex items-center text-base font-medium">
+          <img src="./assets/icons/fish.svg" alt="fish-icon" />
+          <ul class="flex items-center gap-14 ml-3">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О Клинике</a></li>
+            <li><a href="#">Наши Услуги</a></li>
+            <li><a href="#">Полезные Статьи</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <a class="flex gap-1.5" href="#"
+          ><img src="./assets/icons/pet.svg" alt="paw" /><span
+            >Задать вопрос</span
+          ></a
+        >
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main class="">
+      <section class="h-screen w-screen pt-[153px] pb-[237px]">
+        <div class="container">
+          <h1 class="leading-16 text-[70px] font-bold">
+            Мы заботимся о <span class="text-sky-blue">ваших питомцах!</span>
+          </h1>
+          <p>
+            Вам и Вашему любимцу множество услуг по диагностике, профилактике
+            заболеваний по лечению и уходу за Вашими животными. Профессионалы
+            работающие в нашей клинике сделают все для того, чтобы быстро,
+            эффективно и максимально безболезненно выполнить любие процедуры,
+            которые необходимы Вашему домашнему любимцу.
+          </p>
+          <button type="button" class="">Наши услуги</button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

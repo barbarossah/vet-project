@@ -1,1 +1,25 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaCyrillicBook.ttf");
+}
+@theme {
+  --color-prim: #333333;
+  --color-grey: #f9f9f9;
+  --color-sky-blue: #78c0de;
+  --font-futura: "Futura PT";
+  --drop-shadow-3xl: 0 35px 35px rgba(0, 0, 0, 1);
+  /* --bg-body: url("../images/bg.png"); */
+}
+/* @layer utilities {
+  .fish-icon::before {
+    content: url("../icons/fish.svg");
+    margin-right: 8px;
+  }
+} */
+@utility container {
+  /* height: 100%; */
+  max-width: 1310px;
+  margin-inline: auto;
+  /* padding-inline: 2rem; */
+}
