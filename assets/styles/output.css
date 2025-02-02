@@ -380,7 +380,10 @@
     --color-prim: #333333;
     --color-grey: #f9f9f9;
     --color-sky-blue: #78c0de;
+    --color-minor: #949494;
+    --color-orange: #ffbd54;
     --font-futura: "Futura PT";
+    --font-gaegu: "Gaegu";
     --drop-shadow-3xl: 0 35px 35px rgba(0, 0, 0, 1);
   }
 }
@@ -529,8 +532,38 @@
   .collapse {
     visibility: collapse;
   }
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
+  }
+  .-top-\[80px\] {
+    top: calc(80px * -1);
+  }
+  .-top-\[160px\] {
+    top: calc(160px * -1);
+  }
+  .-right-\[110px\] {
+    right: calc(110px * -1);
+  }
+  .-right-\[150px\] {
+    right: calc(150px * -1);
+  }
+  .-bottom-\[50px\] {
+    bottom: calc(50px * -1);
+  }
+  .-bottom-\[60px\] {
+    bottom: calc(60px * -1);
+  }
+  .-left-\[160px\] {
+    left: calc(160px * -1);
+  }
+  .-left-\[180px\] {
+    left: calc(180px * -1);
+  }
+  .z-10 {
+    z-index: 10;
   }
   .container {
     width: 100%;
@@ -553,9 +586,33 @@
   .m-\[0px_17px_0px_7px\] {
     margin: 0px 17px 0px 7px;
   }
+  .m-\[29px_0_38px\] {
+    margin: 29px 0 38px;
+  }
   .container {
     max-width: 1310px;
     margin-inline: auto;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .my-\[9px_34px\] {
+    margin-block: 9px 34px;
+  }
+  .mt-11 {
+    margin-top: calc(var(--spacing) * 11);
+  }
+  .mt-\[35\.5px\] {
+    margin-top: 35.5px;
+  }
+  .mb-9 {
+    margin-bottom: calc(var(--spacing) * 9);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
+  .mb-\[18px\] {
+    margin-bottom: 18px;
   }
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
@@ -566,6 +623,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .inline-flex {
     display: inline-flex;
   }
@@ -574,6 +634,12 @@
   }
   .table {
     display: table;
+  }
+  .h-\[1px\] {
+    height: 1px;
+  }
+  .h-\[50px\] {
+    height: 50px;
   }
   .h-\[61px\] {
     height: 61px;
@@ -584,23 +650,59 @@
   .h-screen {
     height: 100vh;
   }
-  .w-screen {
-    width: 100vw;
+  .w-\[140px\] {
+    width: 140px;
+  }
+  .w-\[185px\] {
+    width: 185px;
+  }
+  .w-\[241px\] {
+    width: 241px;
+  }
+  .w-\[495px\] {
+    width: 495px;
+  }
+  .w-\[608px\] {
+    width: 608px;
+  }
+  .w-\[700px\] {
+    width: 700px;
+  }
+  .w-\[1223px\] {
+    width: 1223px;
+  }
+  .w-\[clamp\(120px\,23vw\,350px\)\] {
+    width: clamp(120px, 23vw, 350px);
+  }
+  .w-\[clamp\(150px\,55vw\,850px\)\] {
+    width: clamp(150px, 55vw, 850px);
   }
   .border-collapse {
     border-collapse: collapse;
   }
+  .rotate-180 {
+    rotate: 180deg;
+  }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .items-center {
     align-items: center;
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .justify-end {
     justify-content: flex-end;
@@ -611,24 +713,72 @@
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .gap-14 {
     gap: calc(var(--spacing) * 14);
   }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
+  .gap-\[13px\] {
+    gap: 13px;
+  }
   .gap-\[98px\] {
     gap: 98px;
+  }
+  .overflow-clip {
+    overflow: clip;
+  }
+  .rounded-\[3px\] {
+    border-radius: 3px;
+  }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#dbdbdb\] {
+    background-color: #dbdbdb;
+  }
   .bg-grey {
     background-color: var(--color-grey);
+  }
+  .bg-orange {
+    background-color: var(--color-orange);
+  }
+  .bg-prim {
+    background-color: var(--color-prim);
   }
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-\[42px_35px_43px\] {
+    padding: 42px 35px 43px;
+  }
+  .p-\[118px_0_127px\] {
+    padding: 118px 0 127px;
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
+  }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
   .py-\[13px\] {
     padding-block: 13px;
+  }
+  .py-\[73px\] {
+    padding-block: 73px;
   }
   .pt-\[153px\] {
     padding-top: 153px;
@@ -636,8 +786,25 @@
   .pb-\[237px\] {
     padding-bottom: 237px;
   }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
   .font-futura {
     font-family: var(--font-futura);
+  }
+  .font-gaegu {
+    font-family: var(--font-gaegu);
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -647,12 +814,39 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .text-\[70px\] {
     font-size: 70px;
+  }
+  .text-\[200px\] {
+    font-size: 200px;
+  }
+  .leading-5 {
+    --tw-leading: calc(var(--spacing) * 5);
+    line-height: calc(var(--spacing) * 5);
+  }
+  .leading-6 {
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
   }
   .leading-16 {
     --tw-leading: calc(var(--spacing) * 16);
     line-height: calc(var(--spacing) * 16);
+  }
+  .leading-\[26px\] {
+    --tw-leading: 26px;
+    line-height: 26px;
+  }
+  .leading-\[54px\] {
+    --tw-leading: 54px;
+    line-height: 54px;
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -662,11 +856,24 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-\[\#dbdbdb\] {
+    color: #dbdbdb;
+  }
+  .text-minor {
+    color: var(--color-minor);
+  }
   .text-prim {
     color: var(--color-prim);
   }
   .text-sky-blue {
     color: var(--color-sky-blue);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .not-italic {
     font-style: normal;
@@ -678,9 +885,24 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .\*\:mb-3\.5 {
+    :is(& > *) {
+      margin-bottom: calc(var(--spacing) * 3.5);
+    }
+  }
   .\*\:flex {
     :is(& > *) {
       display: flex;
+    }
+  }
+  .\*\:h-\[215px\] {
+    :is(& > *) {
+      height: 215px;
+    }
+  }
+  .\*\:w-\[193px\] {
+    :is(& > *) {
+      width: 193px;
     }
   }
   .\*\:items-center {
@@ -693,6 +915,21 @@
       gap: 9px;
     }
   }
+  .\*\:bg-white {
+    :is(& > *) {
+      background-color: var(--color-white);
+    }
+  }
+  .\*\:p-\[30px_32px_28px_35px\] {
+    :is(& > *) {
+      padding: 30px 32px 28px 35px;
+    }
+  }
+  .\*\:text-center {
+    :is(& > *) {
+      text-align: center;
+    }
+  }
   .\*\:last\:gap-0 {
     :is(& > *) {
       &:last-child {
@@ -700,10 +937,43 @@
       }
     }
   }
+  .\*\*\:data-icon\:mx-auto {
+    :is(& *) {
+      &[data-icon] {
+        margin-inline: auto;
+      }
+    }
+  }
+  .\*\*\:data-icon\:mb-\[22px\] {
+    :is(& *) {
+      &[data-icon] {
+        margin-bottom: 22px;
+      }
+    }
+  }
+  .\*\*\:data-text\:text-\[18px\] {
+    :is(& *) {
+      &[data-text] {
+        font-size: 18px;
+      }
+    }
+  }
+  .\*\*\:data-text\:font-semibold {
+    :is(& *) {
+      &[data-text] {
+        --tw-font-weight: var(--font-weight-semibold);
+        font-weight: var(--font-weight-semibold);
+      }
+    }
+  }
 }
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaCyrillicBook.ttf");
+}
+@font-face {
+  font-family: "Gaegu";
+  src: url("../fonts/Gaegu-Regular.ttf");
 }
 @keyframes spin {
   to {

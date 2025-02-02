@@ -40,7 +40,9 @@
     <!-- HEADER START -->
     <header class="h-[61px] bg-white">
       <div class="container flex items-center justify-between h-full">
-        <a class="" href="#"><img src="./assets/icons/logo.svg" alt="" /></a>
+        <a class="relative z-10" href="#"
+          ><img src="./assets/icons/logo.svg" alt=""
+        /></a>
         <nav class="flex items-center text-base font-medium">
           <img src="./assets/icons/fish.svg" alt="fish-icon" />
           <ul class="flex items-center gap-14 ml-3">
@@ -63,21 +65,190 @@
     <!-- HEADER END -->
 
     <main class="">
-      <section class="h-screen w-screen pt-[153px] pb-[237px]">
-        <div class="container">
-          <h1 class="leading-16 text-[70px] font-bold">
-            Мы заботимся о <span class="text-sky-blue">ваших питомцах!</span>
-          </h1>
-          <p>
-            Вам и Вашему любимцу множество услуг по диагностике, профилактике
-            заболеваний по лечению и уходу за Вашими животными. Профессионалы
-            работающие в нашей клинике сделают все для того, чтобы быстро,
-            эффективно и максимально безболезненно выполнить любие процедуры,
-            которые необходимы Вашему домашнему любимцу.
-          </p>
-          <button type="button" class="">Наши услуги</button>
+      <!-- SHOWCASE START -->
+      <section
+        class="h-screen pt-[153px] pb-[237px] justify-end relative overflow-clip"
+      >
+        <img
+          class="absolute -top-[160px] -left-[180px] w-[clamp(150px,55vw,850px)]"
+          src="./assets/images/Group-50.png"
+          alt="pets"
+        />
+        <img
+          class="absolute -right-[110px] -bottom-[50px] w-[clamp(120px,23vw,350px)]"
+          src="./assets/images/Group-52.png"
+          alt="parrot"
+        />
+        <div class="container flex justify-end">
+          <div class="text-left">
+            <h1 class="leading-16 w-[608px] text-[70px] font-bold">
+              Мы заботимся о <span class="text-sky-blue">ваших питомцах!</span>
+            </h1>
+            <p class="w-[495px] leading-5 m-[29px_0_38px] text-minor">
+              Вам и Вашему любимцу множество услуг по диагностике, профилактике
+              заболеваний по лечению и уходу за Вашими животными. Профессионалы
+              работающие в нашей клинике сделают все для того, чтобы быстро,
+              эффективно и максимально безболезненно выполнить любие процедуры,
+              которые необходимы Вашему домашнему любимцу.
+            </p>
+            <button
+              type="button"
+              class="cursor-pointer py-4 px-12 rounded-[3px] bg-prim text-white"
+            >
+              Наши услуги
+            </button>
+          </div>
         </div>
       </section>
+      <!-- SHOWCASE END -->
+      <!-- QUOTES START -->
+      <section>
+        <h2 class="hidden">Blockquote</h2>
+        <div class="container text-center py-[73px]">
+          <div class="w-[140px] h-[1px] bg-[#dbdbdb] mx-auto"></div>
+          <blockquote
+            class="relative w-[700px] text-minor mx-auto mt-11 mb-9 px-7"
+          >
+            <span
+              class="font-gaegu absolute text-[200px] text-[#dbdbdb] -top-[80px] -left-[160px]"
+              >“</span
+            >
+            Наша ветеринарная клиника готова уделить максимум внимания Вам и
+            Вашему питамцу. Здоровье и благополучие Ваших животных очень важно
+            для нас и мы стремимся оказать наилучшую возможную ветеринарную
+            помощь.
+            <span
+              class="font-gaegu absolute text-[200px] text-[#dbdbdb] rotate-180 -bottom-[60px] -right-[150px]"
+              >“</span
+            >
+          </blockquote>
+          <div class="w-[140px] h-[1px] bg-[#dbdbdb] mx-auto"></div>
+
+          <p class="font-medium text-xl leading-[26px] mt-[35.5px]">
+            Оржоникидзевская Ветеринарная клиника
+          </p>
+        </div>
+      </section>
+      <!-- QUOTES END -->
+      <!-- OUR SERVICES START -->
+      <section class="p-[118px_0_127px]">
+        <div class="container">
+          <h2 class="text-5xl leading-[54px] font-black mb-20 text-center">
+            Наши услуги
+          </h2>
+          <div>
+            <ul
+              class="flex justify-center gap-[13px] *:w-[193px] *:h-[215px] *:text-center *:bg-white *:p-[30px_32px_28px_35px] *:mb-3.5 **:data-icon:mb-[22px] **:data-icon:mx-auto **:data-text:text-[18px] **:data-text:font-semibold"
+            >
+              <li>
+                <img
+                  src="./assets/icons/doctor-1.svg"
+                  data-icon
+                  alt="doctor-icon"
+                />
+                <p data-text>Первичный осмотр</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/nurse.svg"
+                  data-icon
+                  alt="doctor-icon"
+                />
+                <p data-text>Первичный осмотр</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/surgery.svg"
+                  data-icon
+                  alt="doctor-icon"
+                />
+                <p data-text>Хирургическое вмешательство</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/skin_care.svg"
+                  data-icon
+                  alt="doctor-icon"
+                />
+                <p data-text>Дерматология</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/diagnosis.svg"
+                  data-icon
+                  alt="doctor-icon"
+                />
+                <p data-text>Лабораторная диагностика</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/oftalmology.svg "
+                  data-icon
+                  alt="doctor-icon"
+                />
+                <p data-text>Офтальмология</p>
+              </li>
+            </ul>
+            <div
+              class="p-[42px_35px_43px] bg-white w-[1223px] mx-auto flex gap-20"
+            >
+              <img src="./assets/images/image 4.jpeg" alt="" />
+              <div class="flex flex-col justify-center">
+                <h3 class="text-4xl mb-[18px] font-semibold">
+                  Первичный осмотр
+                </h3>
+                <p class="text-minor">
+                  По условиям акции в нашей клинике предоставляетса безплатная
+                  услуга “Дневной стационар” которая позволяет экономить Ваше
+                  время. Вы имеете возможность оставить у нас.
+                </p>
+                <p class="my-[9px_34px] text-minor">
+                  По условиям акции в нашей клинике предоставляетса безплатная
+                  услуга “Дневной стационар” которая позволяет экономить Ваше
+                  время. Вы имеете возможность оставить у нас.
+                </p>
+                <div class="flex gap-5">
+                  <button
+                    type="button"
+                    class="flex items-center justify-center gap-2 rounded-sm cursor-pointer h-[50px] w-[185px] bg-orange text-white"
+                  >
+                    <img
+                      src="./assets/icons/money-1.svg"
+                      alt="coins-icon"
+                    /><span>Узнать цену</span>
+                  </button>
+                  <button
+                    class="flex items-center justify-center gap-2 rounded-sm cursor-pointer h-[50px] w-[241px] bg-prim text-white"
+                  >
+                    <img
+                      src="./assets/icons/document-1.svg"
+                      alt="schedule-icon"
+                    /><span>Записаться на приём</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- OUR SERVICES END -->
     </main>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </body>
 </html>

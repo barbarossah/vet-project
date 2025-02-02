@@ -3,11 +3,18 @@
   font-family: "Futura PT";
   src: url("../fonts/FuturaCyrillicBook.ttf");
 }
+@font-face {
+  font-family: "Gaegu";
+  src: url("../fonts/Gaegu-Regular.ttf");
+}
 @theme {
   --color-prim: #333333;
   --color-grey: #f9f9f9;
   --color-sky-blue: #78c0de;
+  --color-minor: #949494;
+  --color-orange: #ffbd54;
   --font-futura: "Futura PT";
+  --font-gaegu: "Gaegu";
   --drop-shadow-3xl: 0 35px 35px rgba(0, 0, 0, 1);
   /* --bg-body: url("../images/bg.png"); */
 }
