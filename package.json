@@ -1,0 +1,25 @@
+{
+  "name": "vet-project",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/barbarossah/vet-project#readme",
+  "bugs": {
+    "url": "https://github.com/barbarossah/vet-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbarossah/vet-project.git"
+  },
+  "license": "ISC",
+  "author": "Ismoil",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.3",
+    "tailwindcss": "^4.0.3"
+  },
+  "devDependencies": {}
+}
